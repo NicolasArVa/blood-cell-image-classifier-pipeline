@@ -1,0 +1,15 @@
+# Data and models (too big for git)
+data/
+models/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+.env
+.DS_Store
