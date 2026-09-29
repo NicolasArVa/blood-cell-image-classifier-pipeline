@@ -1,0 +1,16 @@
+services:
+  dev:
+    build: .
+    container_name: bloodcells-dev
+    volumes:
+      - .:/app
+    ports:
+      - 8888:8888
+    shm_size: "2gb"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
