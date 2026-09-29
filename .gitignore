@@ -1,11 +1,14 @@
 # Data and models (too big for git)
-data/
-models/
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
 
 # Python
 __pycache__/
 *.pyc
 .venv/
+venv/
 
 # Jupyter
 .ipynb_checkpoints/
