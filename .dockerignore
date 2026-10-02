@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# Virtual environments (mounted at runtime, not baked into the image)
+.venv
+venv
+env/
+
+# Secrets / local config (provide at runtime via env_file or env vars)
+.env
+.env.*
+!.env.example
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Docker files themselves
+Dockerfile*
+docker-compose*.yml
+compose*.yml
+.dockerignore
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+tmp/
